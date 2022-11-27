@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 20px 15px;
+  position: relative;
+}
+.header-wrap {
+  background: url(../img/index.jpg) no-repeat;
+  background-size: cover;
+}
+.header-wrap__logo {
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 38px;
+  color: white;
+  text-align: center;
+  padding: 248px 0 15px 0;
+}
