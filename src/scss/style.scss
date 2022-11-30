@@ -1,8 +1,10 @@
-@import 'styleZero.scss';
+@import 'main.scss';
 @import 'header.scss';
 @import 'category.scss';
 @import 'feedback.scss';
 @import 'catalog.scss';
+@import 'return.scss';
+@import 'zakaz.scss';
 .news {
   font-weight: 300;
   font-size: 14px;
@@ -47,6 +49,7 @@
   overflow: hidden;
   transition: 1.3s;
   position: absolute;
+  z-index: 4;
 }
 .popup-on {
   /* padding: 0 20px 80px; */

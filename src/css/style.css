@@ -197,6 +197,175 @@ body {
   margin-bottom: 15px;
 }
 
+.return {
+  padding: 0 20px 40px 20px;
+}
+
+.return__logo {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  padding-bottom: 15px;
+}
+
+.return__text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.return__block-text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 55px 0 0;
+  text-align: center;
+  position: relative;
+}
+
+.return__block-text::before {
+  content: "";
+  background: url(../img/icons/birka.png) no-repeat;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 10%;
+  left: 45%;
+}
+
+.bike::before {
+  content: "";
+  background: url(../img/icons/bike.png) no-repeat;
+  background-size: cover;
+}
+
+.clock::before {
+  content: "";
+  background: url(../img/icons/clock.png) no-repeat;
+  background-size: cover;
+}
+
+.card::before {
+  content: "";
+  background: url(../img/icons/card.png) no-repeat;
+  background-size: cover;
+  height: 24px;
+}
+
+.money::before {
+  content: "";
+  background: url(../img/icons/money.png) no-repeat;
+  background-size: cover;
+}
+
+.blunk::before {
+  content: "";
+  background: url(../img/icons/blunk.png) no-repeat;
+  background-size: cover;
+  width: 27px;
+}
+
+.zakaz {
+  padding: 0 20px;
+}
+
+.zakaz__cards {
+  display: flex;
+}
+
+.zakaz__cards-block {
+  padding-left: 10px;
+}
+
+.zakaz__cards-block-article {
+  color: #e0bea2;
+  padding-bottom: 5px;
+}
+
+.zakaz__cards-title {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+}
+
+.zakaz__cards-title-text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.zakaz__cards-title-price {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.zakaz__cards-parametrs {
+  display: flex;
+  align-items: center;
+}
+
+.zakaz__cards-parametrs-circle {
+  border: 0.3px solid #252525;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 20px;
+}
+
+.zakaz__cards-parametrs-circle::after {
+  content: "";
+  background: #f1ddaa;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  position: absolute;
+  top: 2.5px;
+  left: 2.5px;
+}
+
+.zakaz__cards-parametrs-size-text {
+  padding: 12px 5px 10px 10px;
+}
+
+.zakaz__cards-parametrs-size {
+  border: 0.5px solid #252525;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  position: relative;
+  width: 49px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.zakaz__cards-parametrs-size::after {
+  content: "";
+  background: url(../img/icons/Vector.svg) no-repeat;
+  width: 10px;
+  height: 8px;
+  position: absolute;
+  top: 17px;
+  right: 10px;
+}
+
+.zakaz__cards-parametrs-quantity {
+  padding: 11px 26px;
+  border: 0.5px solid #252525;
+  margin-right: 18px;
+}
+
+.zakaz__cards-parametrs-quantity-inp {
+  width: 20px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  width: 15px;
+  height: 15px;
+}
+
 .news {
   font-weight: 300;
   font-size: 14px;
@@ -247,6 +416,7 @@ body {
   overflow: hidden;
   transition: 1.3s;
   position: absolute;
+  z-index: 4;
 }
 
 .popup-on {

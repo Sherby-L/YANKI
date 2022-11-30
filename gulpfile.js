@@ -5,12 +5,12 @@ const sass = require('gulp-sass')(require('sass'));
 const browserSync = require('browser-sync').create();
 
 const html = () => {
-  return src('./*.html').pipe(browserSync.stream());
+  return src('./src/**.*.html').pipe(browserSync.stream());
 };
 const sassToCSS = () => {
-  return src('./scss/style.scss')
+  return src('./src/scss/style.scss')
     .pipe(sass())
-    .pipe(gulp.dest('./css/'))
+    .pipe(gulp.dest('./src/css/'))
     .pipe(browserSync.stream());
 };
 
@@ -18,15 +18,15 @@ const sassToCSS = () => {
 const server = () => {
   browserSync.init({
     server: {
-      baseDir: './',
+      baseDir: './src/',
     },
   });
 };
 
 //наблюдениеsrc/html/**/*.html
 const watcher = () => {
-  watch('./**/*.html', html);
-  watch('./scss/**/*.scss', sassToCSS);
+  watch('./src/', browserSync.reload);
+  watch('./src/scss/**/*.scss', sassToCSS);
 };
 
 exports.sassToCSS = sassToCSS;
