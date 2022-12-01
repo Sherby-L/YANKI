@@ -31,21 +31,12 @@
       <div class="language">
         <div class="languageRu">
           <p>RU</p>
+          <div class="language-popup">
+            <p class="languageRu-text">UA</p>
+            <p class="languageRu-text">EN</p>
+          </div>
         </div>
-        <div class="language__choice">
-          <svg
-            width="14"
-            height="14"
-            viewBox="0 0 14 14"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M7.48535 7.88906L11.3744 4L12.4854 5.11094L7.48535 10.1109L2.48535 5.11094L3.59629 4L7.48535 7.88906Z"
-              fill="#252525"
-            />
-          </svg>
-        </div>
+        <div class="language__choice"></div>
       </div>
       <div class="mainlogo">
         <svg
@@ -153,7 +144,7 @@
         <h3>NEW</h3>
       </div>
       <div class="popup__new">
-        <h3><a href="../catalog.html">КАТАЛОГ</a></h3>
+        <h3><a href="catalog.html">КАТАЛОГ</a></h3>
       </div>
       <div class="popup__new">
         <h3>О НАС</h3>
@@ -232,7 +223,7 @@
       </div>
     </div>
     <main class="zakaz">
-      <h2>Ваш заказ</h2>
+      <h2 class="zakaz__title">Ваш заказ</h2>
       <div class="zakaz__cards">
         <img src="img/palto-basket.jpg" alt="" width="95" height="110" />
         <div class="zakaz__cards-block">
@@ -247,11 +238,9 @@
               <p class="zakaz__cards-parametrs-size-text">L</p>
             </div>
             <div class="zakaz__cards-parametrs-quantity">
-              <input
-                class="zakaz__cards-parametrs-quantity-inp"
-                type="number"
-                value="3"
-              />
+              <div class="zakaz__cards-parametrs-quantity-inp">
+                <input type="number" value="3" />
+              </div>
             </div>
             <div class="zakaz__cards-parametrs-delete">
               <svg
@@ -275,6 +264,195 @@
               </svg>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="zakaz__cards">
+        <img src="img/blueparka-basket.jpg" alt="" width="95" height="110" />
+        <div class="zakaz__cards-block">
+          <p class="zakaz__cards-block-article">арт. 1588262</p>
+          <div class="zakaz__cards-title">
+            <h3 class="zakaz__cards-title-text">Синяя парка</h3>
+            <p class="zakaz__cards-title-price">5990 P</p>
+          </div>
+          <div class="zakaz__cards-parametrs">
+            <div
+              class="zakaz__cards-parametrs-circle zakaz__cards-parametrs-circle-blue"
+            ></div>
+            <div class="zakaz__cards-parametrs-size">
+              <p class="zakaz__cards-parametrs-size-text">L</p>
+            </div>
+            <div class="zakaz__cards-parametrs-quantity">
+              <div class="zakaz__cards-parametrs-quantity-inp">
+                <input type="number" value="2" />
+              </div>
+            </div>
+            <div class="zakaz__cards-parametrs-delete">
+              <svg
+                width="25"
+                height="25"
+                viewBox="0 0 25 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_377_958)">
+                  <path
+                    d="M18.75 5H25V7.5H22.5V23.75C22.5 24.0815 22.3683 24.3995 22.1339 24.6339C21.8995 24.8683 21.5815 25 21.25 25H3.75C3.41848 25 3.10054 24.8683 2.86612 24.6339C2.6317 24.3995 2.5 24.0815 2.5 23.75V7.5H0V5H6.25V1.25C6.25 0.918479 6.3817 0.600537 6.61612 0.366116C6.85054 0.131696 7.16848 0 7.5 0H17.5C17.8315 0 18.1495 0.131696 18.3839 0.366116C18.6183 0.600537 18.75 0.918479 18.75 1.25V5ZM20 7.5H5V22.5H20V7.5ZM8.75 11.25H11.25V18.75H8.75V11.25ZM13.75 11.25H16.25V18.75H13.75V11.25ZM8.75 2.5V5H16.25V2.5H8.75Z"
+                    fill="#E0BEA2"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_377_958">
+                    <rect width="25" height="25" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="zakaz__text">К оплате: <span>15250 грн</span></p>
+      <div class="ordering">
+        <h2 class="ordering__title">Оформление заказа</h2>
+        <p class="ordering__text">Персональные данные:</p>
+        <div class="ordering__inputs">
+          <input
+            class="ordering__inputs-inp"
+            type="text"
+            placeholder="Ваше имя*"
+            name=""
+            id=""
+          />
+          <input
+            class="ordering__inputs-inp"
+            type="text"
+            placeholder="Ваша фамилия*"
+            name=""
+            id=""
+          />
+          <input
+            class="ordering__inputs-inp"
+            type="text"
+            placeholder="Ваш e-mail*"
+            name=""
+            id=""
+          />
+          <input
+            class="ordering__inputs-inp"
+            type="text"
+            placeholder="Ваш телефон*"
+            name=""
+            id=""
+          />
+        </div>
+        <p class="ordering__text">Способ доставки:</p>
+        <div class="ordering__radio">
+          <p class="ordering__text">По Украине:</p>
+          <label class="ordering__radio-flex">
+            <input
+              type="radio"
+              class="ordering__radio-input"
+              checked
+              name="adres"
+            />
+            <span class="ordering__radio-box"></span>
+            <p class="ordering__radio-text">
+              Самовывоз - вул. Большая Васильковская 14(м. Льва Толстого)
+            </p>
+          </label>
+          <label class="ordering__radio-flex">
+            <input type="radio" class="ordering__radio-input" name="adres" />
+            <span class="ordering__radio-box"></span>
+            <p class="ordering__radio-text">Новая Почта</p>
+          </label>
+          <p class="ordering__text">Международная доставка:</p>
+          <label class="ordering__radio-flex">
+            <input type="radio" class="ordering__radio-input" name="adres" />
+            <span class="ordering__radio-box"></span>
+            <p class="ordering__radio-text">Украпочта / 1-3 недели / 30$</p>
+          </label>
+          <label class="ordering__radio-flex">
+            <input type="radio" class="ordering__radio-input" name="adres" />
+            <span class="ordering__radio-box"></span>
+            <p class="ordering__radio-text">DHL / 3-7 дней / 60$</p>
+          </label>
+        </div>
+        <div>
+          <p class="ordering__text">Адрес доставки:</p>
+          <div class="ordering__inputs">
+            <input
+              type="text"
+              class="ordering__inputs-inp"
+              placeholder="Город*"
+              name=""
+              id=""
+            />
+            <input
+              class="ordering__inputs-inp"
+              type="text"
+              placeholder="Отделение почты*"
+              name=""
+              id=""
+            />
+          </div>
+        </div>
+        <div class="payment">
+          <p class="ordering__text">Способ оплаты:</p>
+          <label class="ordering__radio-flex">
+            <input type="radio" class="ordering__radio-input" name="payment" />
+            <span class="ordering__radio-box"></span>
+            <p class="ordering__radio-text ordering__radio-text-privat">
+              Полная предоплата через Приват 24
+            </p>
+          </label>
+          <label class="ordering__radio-flex ordering__viza">
+            <input type="radio" class="ordering__radio-input" name="payment" />
+            <span class="ordering__radio-box"></span>
+            <p class="ordering__radio-text ordering__radio-text-viza">
+              Денежным переводом Visa/MasterCard
+            </p>
+          </label>
+          <label class="ordering__radio-flex">
+            <input type="radio" class="ordering__radio-input" name="payment" />
+            <span class="ordering__radio-box"></span>
+            <p class="ordering__radio-text">
+              Наложенным платежом в отделении Новой Почты
+            </p>
+          </label>
+        </div>
+        <div>
+          <p class="ordering__text">Использование бонусного счёта:</p>
+          <p class="calc-bonus">Сумма списания бонусов*</p>
+        </div>
+        <div class="ordering__links">
+          <p class="ordering__links-personal">
+            <a href="">Войти в личный кабинет</a>
+          </p>
+          <p class="ordering__links-item"><a href="">УСЛОВИЯ ДОСТАВКИ</a></p>
+          <p class="ordering__links-item">
+            <a href="return.html">УСЛОВИЯ ОБМЕНА И ВОЗВРАТА</a>
+          </p>
+          <p class="ordering__links-item">
+            <a href="">ИНФОРМАЦИЯ ОБ ОПЛАТЕ</a>
+          </p>
+        </div>
+        <div class="ordering__delivery">
+          <div class="ordering__delivery-flex">
+            <p>ДОСТАВКА:</p>
+            <p class="ordering__delivery-flex-text">По тарифам перевозчика</p>
+          </div>
+          <div class="ordering__delivery-flex">
+            <p>БОНУСЫ:</p>
+            <p class="ordering__delivery-flex-text">-69 грн</p>
+          </div>
+          <div class="ordering__delivery-flex">
+            <p>ИТОГО:</p>
+            <p class="ordering__delivery-flex-text">15250 грн</p>
+          </div>
+          <button class="ordering__delivery-btn">ОФОРМИТЬ ЗАКАЗ</button>
+          <p class="ordering__delivery-oferta">
+            Нажимая на кнопку «оплатить заказ», я принимаю условия публичной
+            оферты и политики конфиденциальности
+          </p>
         </div>
       </div>
     </main>
