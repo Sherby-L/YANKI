@@ -1,0 +1,46 @@
+.contacts-page__title {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  padding-bottom: 15px;
+}
+.contacts-page {
+  padding: 0 20px;
+}
+.contacts-page__flex {
+  display: flex;
+}
+.contacts-page__social {
+  padding-right: 25px;
+}
+.contacts-page__social-text {
+  padding-bottom: 80px;
+  position: relative;
+}
+.contacts-page__social-text::after {
+  content: '';
+  background: url(../img/icons/inst.svg) no-repeat;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 30px;
+  left: 0;
+}
+.contacts-page__social-text::before {
+  content: '';
+  background: url(../img/icons/telegram.svg) no-repeat;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 30px;
+  left: 40px;
+}
+.contacts-page__social-mail {
+  padding-bottom: 15px;
+}
+.contacts-page__adres-text {
+  padding-bottom: 15px;
+}
+.contacts-page__adres {
+  padding-right: 30px;
+}

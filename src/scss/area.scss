@@ -1,0 +1,29 @@
+.area {
+  padding: 40px 35px;
+}
+.area__title {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.area__inp {
+  padding: 12px 40px;
+  border: 0.5px solid #252525;
+  margin-bottom: 15px;
+  width: 100%;
+}
+.area__links {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: underline;
+}
+.area__btn {
+  padding: 12px 0;
+  background-color: $mainColor;
+  width: 100%;
+  color: white;
+  margin-top: 15px;
+  text-transform: uppercase;
+}

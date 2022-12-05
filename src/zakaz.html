@@ -115,7 +115,11 @@
     </header>
     <div class="popup">
       <div class="popup__search">
-        <input type="text" placeholder="Введите ваш запрос" />
+        <input
+          class="popup__search-inp"
+          type="text"
+          placeholder="Введите ваш запрос"
+        />
         <div class="currency">UAH</div>
       </div>
       <div class="popup__personal">
@@ -159,67 +163,9 @@
     <div class="navigation">
       <div class="navigation__wrap">
         <a href="index.html" class="navigation__links">Главная</a>
-        <svg
-          class="navigation__links-svg"
-          width="14"
-          height="14"
-          viewBox="0 0 14 14"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M7.88906 7L4 3.11094L5.11094 2L10.1109 7L5.11094 12L4 10.8891L7.88906 7Z"
-            fill="#E0BEA2"
-          />
-        </svg>
-      </div>
-      <div class="navigation__wrap">
         <a href="" class="navigation__links">Каталог</a>
-        <svg
-          class="navigation__links-svg"
-          width="14"
-          height="14"
-          viewBox="0 0 14 14"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M7.88906 7L4 3.11094L5.11094 2L10.1109 7L5.11094 12L4 10.8891L7.88906 7Z"
-            fill="#E0BEA2"
-          />
-        </svg>
-      </div>
-      <div class="navigation__wrap">
         <a href="index.html" class="navigation__links">Пальто</a>
-        <svg
-          class="navigation__links-svg"
-          width="14"
-          height="14"
-          viewBox="0 0 14 14"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M7.88906 7L4 3.11094L5.11094 2L10.1109 7L5.11094 12L4 10.8891L7.88906 7Z"
-            fill="#E0BEA2"
-          />
-        </svg>
-      </div>
-      <div class="navigation__wrap">
         <a href="index.html" class="navigation__links">Кремовое пальто</a>
-        <svg
-          class="navigation__links-svg"
-          width="14"
-          height="14"
-          viewBox="0 0 14 14"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M7.88906 7L4 3.11094L5.11094 2L10.1109 7L5.11094 12L4 10.8891L7.88906 7Z"
-            fill="#E0BEA2"
-          />
-        </svg>
       </div>
     </div>
     <main class="zakaz">
@@ -230,7 +176,7 @@
           <p class="zakaz__cards-block-article">арт. 1588262</p>
           <div class="zakaz__cards-title">
             <h3 class="zakaz__cards-title-text">Кремовое пальто</h3>
-            <p class="zakaz__cards-title-price">5990 P</p>
+            <p class="zakaz__cards-title-price">5800 грн</p>
           </div>
           <div class="zakaz__cards-parametrs">
             <div class="zakaz__cards-parametrs-circle"></div>
@@ -272,7 +218,7 @@
           <p class="zakaz__cards-block-article">арт. 1588262</p>
           <div class="zakaz__cards-title">
             <h3 class="zakaz__cards-title-text">Синяя парка</h3>
-            <p class="zakaz__cards-title-price">5990 P</p>
+            <p class="zakaz__cards-title-price">5800 грн</p>
           </div>
           <div class="zakaz__cards-parametrs">
             <div
@@ -427,12 +373,14 @@
           <p class="ordering__links-personal">
             <a href="">Войти в личный кабинет</a>
           </p>
-          <p class="ordering__links-item"><a href="">УСЛОВИЯ ДОСТАВКИ</a></p>
+          <p class="ordering__links-item">
+            <a href="delivery.html">УСЛОВИЯ ДОСТАВКИ</a>
+          </p>
           <p class="ordering__links-item">
             <a href="return.html">УСЛОВИЯ ОБМЕНА И ВОЗВРАТА</a>
           </p>
           <p class="ordering__links-item">
-            <a href="">ИНФОРМАЦИЯ ОБ ОПЛАТЕ</a>
+            <a href="delivery.html">ИНФОРМАЦИЯ ОБ ОПЛАТЕ</a>
           </p>
         </div>
         <div class="ordering__delivery">

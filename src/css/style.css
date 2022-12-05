@@ -63,6 +63,7 @@ button::-moz-focus-inner {
 a,
 a:visited {
   text-decoration: none;
+  color: black;
 }
 
 a:hover {
@@ -558,6 +559,153 @@ body {
   text-align: center;
 }
 
+.delivery__title {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  padding-bottom: 15px;
+}
+
+.delivery {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0 20px;
+}
+
+.delivery__text {
+  padding-bottom: 10px;
+}
+
+.delivery__li {
+  padding: 0 0 5px 9px;
+  position: relative;
+}
+
+.delivery__li::before {
+  content: "";
+  background: black;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  position: absolute;
+  top: 9px;
+  left: 0;
+}
+
+.delivery__liqpay {
+  padding: 10px 0 0 0;
+}
+
+.delivery__liqpay-ul {
+  padding-bottom: 40px;
+}
+
+.delivery__liqpay-choice {
+  padding: 15px 30px 16px 45px;
+  background: url(../img/liq1.svg) no-repeat top 15px left 0px;
+}
+
+.delivery__liqpay-yes {
+  padding: 8px 30px 10px 45px;
+  background: url(../img/liq2.svg) no-repeat;
+}
+
+.delivery__liqpay-pay {
+  padding: 15px 25px 0px 45px;
+  background: url(../img/liq3.svg) no-repeat top 44px left 0px;
+}
+
+.contacts-page__title {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  padding-bottom: 15px;
+}
+
+.contacts-page {
+  padding: 0 20px;
+}
+
+.contacts-page__flex {
+  display: flex;
+}
+
+.contacts-page__social {
+  padding-right: 25px;
+}
+
+.contacts-page__social-text {
+  padding-bottom: 80px;
+  position: relative;
+}
+
+.contacts-page__social-text::after {
+  content: "";
+  background: url(../img/icons/inst.svg) no-repeat;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 30px;
+  left: 0;
+}
+
+.contacts-page__social-text::before {
+  content: "";
+  background: url(../img/icons/telegram.svg) no-repeat;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 30px;
+  left: 40px;
+}
+
+.contacts-page__social-mail {
+  padding-bottom: 15px;
+}
+
+.contacts-page__adres-text {
+  padding-bottom: 15px;
+}
+
+.contacts-page__adres {
+  padding-right: 30px;
+}
+
+.area {
+  padding: 40px 35px;
+}
+
+.area__title {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.area__inp {
+  padding: 12px 40px;
+  border: 0.5px solid #252525;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.area__links {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: underline;
+}
+
+.area__btn {
+  padding: 12px 0;
+  background-color: #e0bea2;
+  width: 100%;
+  color: white;
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+
 .news {
   font-weight: 300;
   font-size: 14px;
@@ -619,7 +767,18 @@ body {
   overflow: hidden;
   position: absolute;
   box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.37);
-  background-color: #ffffff;
+  background-color: white;
+  transition: 0.5s;
+}
+
+.language-popup-white {
+  background-color: rgba(100, 100, 100, 0.3529411765);
+}
+
+.language__choice-white {
+  background: url(../img/icons/arrowdown-white.svg) no-repeat top 9px left 5px;
+  width: 20px;
+  height: 20px;
   transition: 0.5s;
 }
 
@@ -639,7 +798,7 @@ body {
 }
 
 .popup {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   height: 0;
   width: 100%;
   overflow: hidden;
@@ -660,6 +819,28 @@ body {
   border-bottom: 0.3px solid #252525;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.popup__search-inp {
+  border: 0.3px solid #252525;
+  padding: 10px 60px 10px 20px;
+  border-radius: 20px;
+  background: url(../img/icons/lupa.svg) no-repeat top 6px right 20px;
+}
+
+.currency {
+  padding-left: 20px;
+  position: relative;
+}
+
+.currency::before {
+  content: "";
+  background: url(../img/icons/arrowdown-black.svg) no-repeat center;
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  left: 53px;
 }
 
 .popup__personal {
@@ -686,8 +867,8 @@ body {
 
 .navigation__wrap {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  padding-bottom: 6px;
 }
 
 .navigation a {
@@ -695,9 +876,14 @@ body {
 }
 
 .navigation__links {
-  word-wrap: break-word;
   display: block;
-  padding-right: 9px;
+  padding-right: 24px;
+  background: url(../img/icons/arrowright.svg) no-repeat top 2px right 7px;
+  padding-bottom: 6px;
+}
+
+.navigation__links:last-child {
+  background: none;
 }
 
 .navigation__links-svg {

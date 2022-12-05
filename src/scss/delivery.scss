@@ -1,0 +1,48 @@
+.delivery__title {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  padding-bottom: 15px;
+}
+.delivery {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0 20px;
+}
+.delivery__text {
+  padding-bottom: 10px;
+}
+.delivery__li {
+  padding: 0 0 5px 9px;
+  position: relative;
+}
+.delivery__li::before {
+  content: '';
+  background: black;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  position: absolute;
+  top: 9px;
+  left: 0;
+}
+.delivery__liqpay {
+  padding: 10px 0 0 0;
+}
+.delivery__liqpay-ul {
+  padding-bottom: 40px;
+}
+.delivery__liqpay-choice {
+  padding: 15px 30px 16px 45px;
+  background: url(../img/liq1.svg) no-repeat top 15px left 0px;
+}
+
+.delivery__liqpay-yes {
+  padding: 8px 30px 10px 45px;
+  background: url(../img/liq2.svg) no-repeat;
+}
+.delivery__liqpay-pay {
+  padding: 15px 25px 0px 45px;
+  background: url(../img/liq3.svg) no-repeat top 44px left 0px;
+}
