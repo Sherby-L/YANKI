@@ -90,7 +90,6 @@ h6 {
 
 body {
   font-family: "Raleway", sans-serif;
-  background: #ffffff;
 }
 
 .header {
@@ -719,6 +718,23 @@ body {
   position: relative;
 }
 
+.news a {
+  color: white;
+}
+
+.category__blocks-item {
+  position: relative;
+}
+
+.category__blocks-item-link {
+  display: block;
+  width: 165px;
+  height: 232px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .news__text {
   padding-top: 16px;
 }
@@ -769,21 +785,22 @@ body {
   box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.37);
   background-color: white;
   transition: 0.5s;
+  z-index: 3;
 }
 
 .language-popup-white {
   background-color: rgba(100, 100, 100, 0.3529411765);
 }
 
-.language__choice-white {
-  background: url(../img/icons/arrowdown-white.svg) no-repeat top 9px left 5px;
-  width: 20px;
+.language__choice {
+  background: url(../img/icons/arrowdown-black.svg) no-repeat top 9px left 5px;
+  width: 15px;
   height: 20px;
   transition: 0.5s;
 }
 
-.language__choice {
-  background: url(../img/icons/arrowdown-black.svg) no-repeat top 9px left 5px;
+.language__choice-white {
+  background: url(../img/icons/arrowdown-white.svg) no-repeat top 9px left 5px;
   width: 15px;
   height: 20px;
   transition: 0.5s;
@@ -797,12 +814,16 @@ body {
   height: 54px;
 }
 
+.scroll-off {
+  overflow: hidden;
+}
+
 .popup {
   background-color: rgb(255, 255, 255);
   height: 0;
   width: 100%;
   overflow: hidden;
-  transition: 1.3s;
+  transition: 0.8s ease;
   position: absolute;
   z-index: 4;
 }
@@ -991,18 +1012,10 @@ body {
   padding-right: 10px;
 }
 
-/*.parametrs__block-topic {
-  font-weight: 300;
-  font-size: 14px;
-}*/
 .parametrs {
   font-weight: 300;
   font-size: 14px;
   line-height: 16px;
-}
-
-.parametrs__block-consist {
-  padding: 15px 0 10px;
 }
 
 .parametrs__detail {
@@ -1011,6 +1024,20 @@ body {
 
 .parametrs__block-text {
   padding-right: 90px;
+}
+
+.parametrs__block-info {
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+
+.parametrs__block-info-on {
+  height: 140px;
+}
+
+.parametrs__block-arrow {
+  transition: 0.5s ease;
 }
 
 .parametrs__text {
@@ -1028,7 +1055,7 @@ body {
 .parametrs__block {
   position: relative;
   border-bottom: 0.3px solid #252525;
-  padding-bottom: 5px;
+  padding: 13px 0 5px;
 }
 
 .obraz__circle {
@@ -1096,6 +1123,19 @@ body {
   text-align: center;
 }
 
+.obraz__block {
+  position: relative;
+}
+
+.obraz__block-link {
+  display: block;
+  width: 165px;
+  height: 230px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .obraz__block-price {
   padding-bottom: 11px;
   text-align: center;
@@ -1109,8 +1149,6 @@ body {
 }
 
 .company {
-  display: flex;
-  justify-content: center;
   border-bottom: 0.3px solid #252525;
   position: relative;
   padding-top: 20px;
@@ -1121,12 +1159,28 @@ body {
   font-weight: 300;
   font-size: 18px;
   line-height: 21px;
+  text-align: center;
+}
+
+.company__text-info {
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.company__text-on {
+  height: 90px;
 }
 
 .company__arrow {
   position: absolute;
   top: 23px;
   right: 0;
+  transition: 0.3s;
+}
+
+.company__arrow-on {
+  transform: rotate(180deg);
 }
 
 .contacts {

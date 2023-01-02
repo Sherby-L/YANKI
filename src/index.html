@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Yanki</title>
   </head>
-  <body>
+  <body class="body">
     <div class="header-wrap">
       <div class="header">
         <div class="menuburger">
@@ -37,34 +37,36 @@
               <p class="languageRu-text">EN</p>
             </div>
           </div>
-          <div class="language__choice-white"></div>
+          <div class="language__choice-white language__choice"></div>
         </div>
         <div class="mainlogo">
-          <svg
-            width="79"
-            height="20"
-            viewBox="0 0 79 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M2.16779 0L8.69931 10.7606L15.2871 0H17.4268L9.68466 12.5634V20H7.71395V12.507L0 0H2.16779Z"
-              fill="white"
-            />
-            <path
-              d="M24.3599 0H26.0209L34.3261 20H32.2428L29.6527 13.7465H20.6718L18.1099 20H15.9984L24.3599 0ZM29.2022 12.1972L25.1763 2.30986L21.0941 12.1972H29.2022Z"
-              fill="white"
-            />
-            <path
-              d="M39.1623 3.6338V20H37.1916V0H38.8244L51.9438 16.6761V0.0281685H53.9145V20H52.0845L39.1623 3.6338Z"
-              fill="white"
-            />
-            <path
-              d="M58.9387 20V0.0281685H60.9094V11.6338L71.9173 0H74.0851L65.9207 8.78873L74.5074 20H72.2833L64.6538 9.97183L60.9094 13.8592V20H58.9387Z"
-              fill="white"
-            />
-            <path d="M77.0293 20V0H79V20H77.0293Z" fill="white" />
-          </svg>
+          <a href="index.html"
+            ><svg
+              width="79"
+              height="20"
+              viewBox="0 0 79 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2.16779 0L8.69931 10.7606L15.2871 0H17.4268L9.68466 12.5634V20H7.71395V12.507L0 0H2.16779Z"
+                fill="white"
+              />
+              <path
+                d="M24.3599 0H26.0209L34.3261 20H32.2428L29.6527 13.7465H20.6718L18.1099 20H15.9984L24.3599 0ZM29.2022 12.1972L25.1763 2.30986L21.0941 12.1972H29.2022Z"
+                fill="white"
+              />
+              <path
+                d="M39.1623 3.6338V20H37.1916V0H38.8244L51.9438 16.6761V0.0281685H53.9145V20H52.0845L39.1623 3.6338Z"
+                fill="white"
+              />
+              <path
+                d="M58.9387 20V0.0281685H60.9094V11.6338L71.9173 0H74.0851L65.9207 8.78873L74.5074 20H72.2833L64.6538 9.97183L60.9094 13.8592V20H58.9387Z"
+                fill="white"
+              />
+              <path d="M77.0293 20V0H79V20H77.0293Z" fill="white" />
+            </svg>
+          </a>
         </div>
         <div class="likebasket">
           <div class="like">
@@ -143,7 +145,7 @@
           <h3><a href="area.html"> ЛИЧНЫЙ КАБИНЕТ</a></h3>
         </div>
         <div class="popup__new">
-          <h3>NEW</h3>
+          <a href="catalog.html"><h3>NEW</h3></a>
         </div>
         <div class="popup__new">
           <a href="catalog.html"><h3>КАТАЛОГ</h3></a>
@@ -158,22 +160,25 @@
           <h3><a href="contacts.html"> КОНТАКТЫ</a></h3>
         </div>
       </div>
-
-      <h1 class="header-wrap__logo">Новая коллекция</h1>
-      <div class="news">
-        <p class="news__text">Смотреть Новинки</p>
-        <svg
-          width="14"
-          height="14"
-          viewBox="0 0 14 14"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M7.88906 7L4 3.11094L5.11094 2L10.1109 7L5.11094 12L4 10.8891L7.88906 7Z"
-            fill="white"
-          />
-        </svg>
+      <div class="">
+        <h1 class="header-wrap__logo">Новая коллекция</h1>
+        <div class="news">
+          <p class="news__text">
+            <a href="catalog.html">Смотреть Новинки</a>
+          </p>
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 14 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7.88906 7L4 3.11094L5.11094 2L10.1109 7L5.11094 12L4 10.8891L7.88906 7Z"
+              fill="white"
+            />
+          </svg>
+        </div>
       </div>
     </div>
     <div class="category">
@@ -181,9 +186,11 @@
       <div class="category__blocks">
         <div class="category__blocks-item">
           <h2 class="category__blocks-item-title">Куртки</h2>
+          <a href="catalog.html" class="category__blocks-item-link"></a>
         </div>
         <div class="category__blocks-item category__blocks-jackets">
           <h2 class="category__blocks-item-title">Пальто</h2>
+          <a href="catalog.html" class="category__blocks-item-link"></a>
         </div>
       </div>
     </div>
@@ -218,6 +225,12 @@
             fill="#E0BEA2"
           />
         </svg>
+        <p class="company__text-info">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+          placeat ab ut perspiciatis totam eaque, aperiam quod laborum assumenda
+          sit corrupti porro, eos dolor, voluptatibus veniam debitis iure
+          ducimus in!
+        </p>
       </div>
       <div class="company">
         <p class="company__text">ПОЛЕЗНОЕ</p>
@@ -234,6 +247,12 @@
             fill="#E0BEA2"
           />
         </svg>
+        <p class="company__text-info">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+          placeat ab ut perspiciatis totam eaque, aperiam quod laborum assumenda
+          sit corrupti porro, eos dolor, voluptatibus veniam debitis iure
+          ducimus in!
+        </p>
       </div>
       <div class="company">
         <p class="company__text">ПОКУПАТЕЛЮ</p>
@@ -250,6 +269,12 @@
             fill="#E0BEA2"
           />
         </svg>
+        <p class="company__text-info">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+          placeat ab ut perspiciatis totam eaque, aperiam quod laborum assumenda
+          sit corrupti porro, eos dolor, voluptatibus veniam debitis iure
+          ducimus in!
+        </p>
       </div>
       <div class="contacts">
         <p class="contacts__text"><a href="contacts.html"> КОНТАКТЫ</a></p>
